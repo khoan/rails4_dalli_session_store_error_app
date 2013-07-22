@@ -1,28 +1,12 @@
-== README
+This app illustrates a weird error for Rails4 + memcache_store on Heroku Cedar 
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+chuck this on Heroku Cedar with Memcachier add on
 
-Things you may want to cover:
+rename Memcachier environment to memcached expected default.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+MEMCACHIER_SERVERS  -> MEMCACHE_SERVERS
+MEMCACHIER_PASSWORD -> MEMCACHE_PASSWORD
+MEMCACHIER_USERNAME -> MEMCACHE_USERNAME
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Hit your Heroku root URL and boom!
